@@ -22,7 +22,7 @@ def SpeechToText(audio):
     language = max(probs, key=probs.get)
 
     #  Decode audio to Text
-    options = whisper.DecodingOptions(fp16 = False)
+    options = whisper.DecodingOptions(language = language, fp16 = False)
     result = whisper.decode(model, mel, options)
     return (language , result.text)
 
