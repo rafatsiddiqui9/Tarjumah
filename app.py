@@ -38,7 +38,7 @@ gr.Interface(
         "label",
         "textbox",
     ],
-    live=True, share = True
+    live=True
 ).launch(
-    debug=False,
+    debug=False, share = True
 )
