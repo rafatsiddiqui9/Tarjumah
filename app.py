@@ -28,7 +28,7 @@ def SpeechToText(audio):
 
 print("Starting the Gradio Web UI")
 gr.Interface(
-    title = 'OpenAI Whisper implementation on Gradio Web UI', 
+    title = 'Tarjumah - Automatic Speech Recognition, powered by Openai Whisper, shipped by Infy42', 
     fn=SpeechToText, 
     
     inputs=[
